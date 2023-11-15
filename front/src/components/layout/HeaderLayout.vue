@@ -27,9 +27,14 @@ a {
   gap: 1em;
   padding: 0 0.5em;
   font-weight: bold;
+  text-underline: none;
 }
 
 img {
   height: 3em;
+}
+
+a:hover{
+  text-decoration: underline;
 }
 </style>
