@@ -16,9 +16,20 @@ export default {
 <style scoped>
 header{
   background: #eeeeee;
+  height: 3em;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 0 0.5em;
+  font-weight: bold;
 }
 
 img {
-  height: 2em;
+  height: 3em;
 }
 </style>
