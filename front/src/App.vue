@@ -5,9 +5,9 @@ import FooterLayout from "@/components/layout/FooterLayout.vue";
 </script>
 
 <template>
-  <HeaderLayout></HeaderLayout>
-  <BodyLayout></BodyLayout>
-  <FooterLayout></FooterLayout>
+  <HeaderLayout/>
+  <BodyLayout/>
+  <FooterLayout/>
 </template>
 
 <style scoped>
