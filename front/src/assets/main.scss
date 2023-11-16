@@ -1,3 +1,13 @@
+@use '../../node_modules/normalize.css';
+@use '../../node_modules/sanitize.css';
+
+@use './scss/button.scss';
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: sans-serif;
@@ -8,4 +18,20 @@ body {
     display: flex;
     flex-flow: column;
     justify-content: space-between;
+
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 0.5em;
+    width: 100%;
+    max-width: 100ch;
+    flex-grow: 1;
+    margin: 0 auto;
+    gap: 0.3em;
+    p {
+        align-self: flex-start;
+    }
 }

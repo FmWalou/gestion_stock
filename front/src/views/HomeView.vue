@@ -1,9 +1,24 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import {RouterLink} from "vue-router";
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <h1>Gérer efficacement votre stock</h1>
+    <RouterLink to="/stock" class="button primary">
+      <span>Voir le stock</span>
+      <!--      svg-->
+    </RouterLink>
   </main>
 </template>
+
+<style scoped>
+  main {
+    flex: 0;
+  }
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+    text-align: center;
+  }
+</style>
