@@ -1,3 +1,6 @@
+<script setup lang="ts">
+</script>
+
 <template>
   <footer>
     <a href="#">
@@ -5,12 +8,6 @@
     </a>
   </footer>
 </template>
-
-<script>
-export default {
-  name: "FooterLayout"
-}
-</script>
 
 <style scoped lang="scss">
   footer {

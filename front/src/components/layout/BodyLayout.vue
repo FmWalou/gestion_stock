@@ -1,15 +1,15 @@
+<script setup lang="ts">
+import {RouterView} from "vue-router";
+
+</script>
+
 <template>
+  <RouterView/>
   <h1>Gérer efficacement votre stock</h1>
   <a href="#">
     <span>Voir le stock</span>
   </a>
 </template>
-
-<script>
-export default {
-  name: "BodyLayout"
-}
-</script>
 
 <style scoped>
   h1 {
