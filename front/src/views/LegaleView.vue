@@ -1,3 +1,7 @@
+<scrip lang="ts" setup>
+
+</scrip>
+
 <template>
   <div class="about">
     <h1>This Legale page</h1>

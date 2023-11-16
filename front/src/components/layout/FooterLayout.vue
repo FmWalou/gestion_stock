@@ -1,11 +1,12 @@
 <script setup lang="ts">
+import {RouterLink} from "vue-router";
 </script>
 
 <template>
   <footer>
-    <a href="#">
+    <RouterLink to="/legale">
       Mentions Légales
-    </a>
+    </RouterLink>
   </footer>
 </template>
 

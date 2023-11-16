@@ -1,17 +1,15 @@
+<script setup lang="ts">
+import {RouterLink} from "vue-router";
+</script>
+
 <template>
   <header>
-    <a href="#">
+    <RouterLink to="/">
       <img src="/logo.svg" alt="Logo Gestion Stock"/>
       <span>Gestion Stock</span>
-    </a>
+    </RouterLink>
   </header>
 </template>
-
-<script>
-export default {
-  name: "HeaderLayout"
-}
-</script>
 
 <style scoped>
   header{
