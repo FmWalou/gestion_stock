@@ -1,7 +1,18 @@
+<script lang="ts" setup>
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+const handleSubmit = (event: Event) => {
+  event.preventDefault();
+  console.log('coucou');
+  router.replace('/stock');
+}
+</script>
+
 <template>
   <main>
     <h1>Ajouter un article</h1>
-    <form>
+    <form @submit="handleSubmit">
       <label>
         <span>Nom</span>
         <input type="text" />
