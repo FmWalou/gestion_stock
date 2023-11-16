@@ -1,3 +1,16 @@
+<script lang="ts" setup>
+import { ref } from 'vue';
+import { type Article} from "../interfaces/Article";
+import vue from "@vitejs/plugin-vue";
+
+const articles = ref<Article[]>([
+  {id: 1, name: "tondeuse à gazon", price: 145, quantity: 4},
+  {id: 2, name: "tournevis", price: 2.90, quantity: 24},
+  {id: 3, name: "vis", price: 0.90, quantity: 200},
+  {id: 4, name: "clou", price: 0.40, quantity: 189},
+])
+</script>
+
 <template>
   <main>
     <h1>Liste des articles</h1>
@@ -18,30 +31,15 @@
         <thead>
         <tr>
           <th class="name">Nom</th>
-          <th class="price number">Prix</th>
+          <th class="price">Prix</th>
           <th class="qty">Quantité</th>
         </tr>
         </thead>
         <tbody>
-        <tr>
-          <td class="name">Tournevis</td>
-          <td class="price number">2.99 €</td>
-          <td class="qty">123</td>
-        </tr>
-        <tr>
-          <td class="name">Pelle</td>
-          <td class="price number">12.99 €</td>
-          <td class="qty">14</td>
-        </tr>
-        <tr>
-          <td class="name">Marteau</td>
-          <td class="price number">2.99 €</td>
-          <td class="qty">123</td>
-        </tr>
-        <tr>
-          <td class="name">Tondeuse</td>
-          <td class="price number">2.99 €</td>
-          <td class="qty">123</td>
+        <tr v-for="article in articles" v-bind:key="article.id">
+          <td class="name">{{ article.name }}</td>
+          <td class="price">{{ article.price }} €</td>
+          <td class="qty"> {{article.quantity }}</td>
         </tr>
         </tbody>
       </table>
@@ -76,20 +74,8 @@ table {
   }
 
   tbody {
-    cursor: pointer;
     tr:nth-child(even) {
       background: #eee;
-    }
-    tr:hover{
-      background: #ddd;
-    }
-
-    tr.selected{
-      background: #ccc;
-    }
-
-    td.number {
-      text-align: right;
     }
   }
 }

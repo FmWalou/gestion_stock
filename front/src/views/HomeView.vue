@@ -7,7 +7,7 @@ import {RouterLink} from "vue-router";
     <h1>Gérer efficacement votre stock</h1>
     <RouterLink to="/stock" class="button primary">
       <span>Voir le stock</span>
-      <!--      svg-->
+      <font-awesome-icon icon="fa-solid fa-angle-right" />
     </RouterLink>
   </main>
 </template>
